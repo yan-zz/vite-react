@@ -26,8 +26,10 @@ export const Counter = () => {
       <h2 id="text" style={{ color: 'white' }}>
         {count}
       </h2>
-      <button onClick={increment} children="Increment" />
-      <button onClick={decrement} children="Decrement" />
+      <div className="counter-buttons">
+        <button onClick={increment} children="Increment" />
+        <button onClick={decrement} children="Decrement" />
+      </div>
     </div>
   );
 };

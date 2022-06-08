@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
-  margin-inline: 5px;
-}
-
 .App {
   text-align: center;
   background-color: #282c34;
@@ -24,6 +20,32 @@ button {
   color: white;
 }
 
+.box {
+  min-height: 100vh;
+}
+
+.window {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .dropdown {
-  margin-bottom: 69px;
+  margin-top: 50px;
+}
+
+.dropdown > select {
+  padding: 5px;
+}
+
+.counter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.counter-buttons > button {
+  margin-inline: 10px;
+  padding: 10%;
 }
