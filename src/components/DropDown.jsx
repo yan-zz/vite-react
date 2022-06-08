@@ -9,6 +9,7 @@ export const DropDown = ({ onChange }) => {
       <select onChange={handleValue}>
         <option value="hello">Hello</option>
         <option value="counter">Counter</option>
+        <option value="notes">Notes</option>
       </select>
     </div>
   );

@@ -1,7 +1,7 @@
 export const Hello = () => {
   return (
     <div className="hello">
-      <p>Hello Nurse</p>
+      <h2>Hello Nurse!</h2>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Button from './Button';
 
 export const Counter = () => {
   const [count, setCount] = useState(0);
@@ -12,7 +11,7 @@ export const Counter = () => {
   };
 
   const colorSwitcher = () => {
-    let el = document.getElementById('p');
+    let el = document.getElementById('text');
     el?.style.color === 'greenyellow'
       ? el?.setAttribute('style', 'color: orange')
       : el?.setAttribute('style', 'color: greenyellow');
@@ -24,11 +23,11 @@ export const Counter = () => {
 
   return (
     <div className="counter">
-      <Button onClick={increment} children="Increment" />
-      <Button onClick={decrement} children="Decrement" />
-      <p id="p" style={{ color: 'white' }}>
+      <h2 id="text" style={{ color: 'white' }}>
         {count}
-      </p>
+      </h2>
+      <button onClick={increment} children="Increment" />
+      <button onClick={decrement} children="Decrement" />
     </div>
   );
 };

@@ -10,9 +10,9 @@ export const Box = () => {
   };
 
   return (
-    <>
+    <div className="box">
       <DropDown onChange={handleValue} />
       <Window component={component} />
-    </>
+    </div>
   );
 };
