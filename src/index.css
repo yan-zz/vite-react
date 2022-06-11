@@ -10,6 +10,7 @@ body {
 .App {
   text-align: center;
   background-color: #282c34;
+  animation: bg-color 20s infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,12 +21,24 @@ body {
   color: white;
 }
 
+@keyframes bg-color {
+  0% {
+    background-color: #282c34;
+  }
+  50% {
+    background-color: #14343a;
+  }
+  100% {
+    background-color: #282c34;
+  }
+}
+
 .box {
   min-height: 100vh;
 }
 
 .window {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +50,7 @@ body {
 
 .dropdown > select {
   padding: 5px;
+  text-align: center;
 }
 
 .counter-buttons {
