@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Hello } from './apps/Hello';
 import { Counter } from './apps/Counter';
-import { Notes } from './apps/Notes/Notes';
+import { Notes } from './apps/Notes';
 
 export const Window = ({ component }) => {
   const [window, setWindow] = useState(<Hello />);
