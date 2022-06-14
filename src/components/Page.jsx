@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { DropDown } from './DropDown';
 import { Window } from './Window';
 
-export const Box = () => {
+export const Page = () => {
   const [component, setComponent] = useState('hello');
 
   const handleValue = (newVal) => {
@@ -10,7 +10,7 @@ export const Box = () => {
   };
 
   return (
-    <div className="box">
+    <div className="page">
       <DropDown onChange={handleValue} />
       <Window component={component} />
     </div>
