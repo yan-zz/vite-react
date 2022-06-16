@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const Hello = () => {
   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    setTimeout(setDate(new Date()), 1000);
-  }, [date]);
+  setTimeout(() => {
+    setDate(new Date());
+  }, 1000);
 
   return (
     <div className="hello">
