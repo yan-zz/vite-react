@@ -19,7 +19,7 @@ export const Notes = () => {
     const toRemove = parseInt(event.target.name, 10);
     const copyNotes = notes;
     copyNotes.splice(toRemove, 1);
-    setNotes(copyNotes);
+    setNotes([...copyNotes]);
   };
 
   const list = notes.map((note, i) => {
