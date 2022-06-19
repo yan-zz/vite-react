@@ -7,6 +7,7 @@ export const Notes = () => {
   const handleClick = () => {
     event.preventDefault();
     setNotes([...notes, inputValue]);
+    setInputValue('');
   };
 
   const handleChange = (event) => {
@@ -42,7 +43,11 @@ export const Notes = () => {
   return (
     <div className="notes">
       <form>
-        <input type="text" onChange={handleChange} />
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleChange}
+        />
         <button onClick={() => handleClick()} children="add" />
       </form>
       <ul>{list}</ul>

@@ -68,6 +68,7 @@ body {
   padding: 0;
   overflow-y: scroll;
   height: 285px;
+  width: 85%;
   overflow-wrap: break-word;
   overflow: auto;
 }
@@ -75,6 +76,6 @@ body {
 .notes > ul > li {
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 80% 20px;
   grid-template-rows: max-content;
 }
