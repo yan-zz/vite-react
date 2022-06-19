@@ -66,4 +66,7 @@ body {
 .notes > ul {
   list-style-type: none;
   padding: 0;
+  height: 390px;
+  width: 720px;
+  overflow: auto;
 }
