@@ -25,12 +25,12 @@ export const Notes = () => {
   const list = notes.map((note, i) => {
     return (
       <li key={i}>
+        {note}
         <button
           name={i}
           onClick={(event) => remove(event)}
           children={'x'}
         />
-        {note}
       </li>
     );
   });
