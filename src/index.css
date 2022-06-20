@@ -68,14 +68,15 @@ body {
   padding: 0;
   overflow-y: scroll;
   height: 285px;
-  width: 85%;
+  width: 305px;
   overflow-wrap: break-word;
   overflow: auto;
 }
 
 .notes > ul > li {
   padding: 5px;
+  text-align: start;
   display: grid;
-  grid-template-columns: 80% 20px;
+  grid-template-columns: 90% 20px;
   grid-template-rows: max-content;
 }

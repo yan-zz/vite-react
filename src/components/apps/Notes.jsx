@@ -6,7 +6,7 @@ export const Notes = () => {
 
   const handleClick = () => {
     event.preventDefault();
-    setNotes([...notes, inputValue]);
+    inputValue.trim() !== '' && setNotes([inputValue, ...notes]);
     setInputValue('');
   };
 
