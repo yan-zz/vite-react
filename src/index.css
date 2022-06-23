@@ -40,7 +40,7 @@ body {
 }
 
 .window {
-  margin-top: 200px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,4 +79,42 @@ body {
   display: grid;
   grid-template-columns: 90% 20px;
   grid-template-rows: max-content;
+}
+
+.output {
+  margin-bottom: 30px;
+  font-size: calc(25px + 2vmin);
+  font-family: -apple-system;
+  display: grid;
+  grid-template-rows: max-content;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.numbers > button {
+  padding: 13px;
+  padding-inline: 26px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: calc(10px + 2vmin);
+  border: 1px solid rgba(247, 29, 119, 0.836);
+  cursor: pointer;
+}
+
+.numbers button:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.numbers button:nth-child(18) {
+  grid-column: 3 / span 2;
 }
