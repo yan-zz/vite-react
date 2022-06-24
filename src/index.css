@@ -32,7 +32,6 @@ body {
 
 .dropdown {
   margin-top: 50px;
-  flex: 1;
 }
 
 .dropdown > select {
