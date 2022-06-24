@@ -23,15 +23,17 @@ body {
 }
 
 .page {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(15px + 2vmin);
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(15px + 2vmin);
+  min-height: 100vh;
 }
 
 .dropdown {
   margin-top: 50px;
+  flex: 1;
 }
 
 .dropdown > select {
@@ -40,7 +42,7 @@ body {
 }
 
 .window {
-  margin-top: 180px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
