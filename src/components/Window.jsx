@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Hello } from './apps/Hello';
 import { Counter } from './apps/Counter';
-import { Notes } from './apps/Notes';
+import { Notes } from './apps/Notes/Notes';
 import { Calculator } from './apps/Calculator';
 
 export const Window = ({ component }) => {
