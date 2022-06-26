@@ -1,10 +1,8 @@
-import { useState } from 'react';
-
-export const Calculator = () => {
-  const [output, setOutput] = useState('0');
+export const CalculatorButtons = ({ output, setOutput }) => {
   const numbers = [
     'AC',
     '<',
+    '%',
     '/',
     '9',
     '8',
@@ -30,6 +28,7 @@ export const Calculator = () => {
         ? setOutput('0')
         : setOutput(output.slice(0, -1));
     } else if (value === '=') setOutput(eval(output));
+    else if (value === '%') setOutput(output / 100);
     else
       output === '0'
         ? setOutput('' + value)
@@ -37,19 +36,16 @@ export const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <div className="output">{output}</div>
-      <div className="numbers">
-        {numbers.map((number) => (
-          <button
-            key={number + 'w'}
-            value={number}
-            onClick={(e) => handleClick(e.target.value)}
-          >
-            {number}
-          </button>
-        ))}
-      </div>
+    <div className="numbers">
+      {numbers.map((number, i) => (
+        <button
+          key={i}
+          value={number}
+          onClick={(e) => handleClick(e.target.value)}
+        >
+          {number}
+        </button>
+      ))}
     </div>
   );
 };

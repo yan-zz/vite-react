@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Hello } from './apps/Hello';
 import { Counter } from './apps/Counter';
 import { Notes } from './apps/Notes/Notes';
-import { Calculator } from './apps/Calculator';
+import { Calculator } from './apps/Calculator/Calculator';
 
 export const Window = ({ component }) => {
   const [window, setWindow] = useState(<Hello />);

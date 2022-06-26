@@ -111,10 +111,6 @@ body {
   cursor: pointer;
 }
 
-.numbers button:nth-child(1) {
-  grid-column: 1 / span 2;
-}
-
-.numbers button:nth-child(18) {
+.numbers button:nth-child(19) {
   grid-column: 3 / span 2;
 }
