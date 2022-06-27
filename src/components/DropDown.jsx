@@ -1,7 +1,8 @@
-export const DropDown = ({ onChange }) => {
-  const handleValue = (ev) => {
-    const newVal = onChange(ev.currentTarget.value);
-    return newVal;
+export const DropDown = (props) => {
+  const { setComponent } = props;
+
+  const handleValue = (e) => {
+    setComponent(e.target.value);
   };
 
   return (
