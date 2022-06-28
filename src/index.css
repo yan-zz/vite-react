@@ -42,18 +42,7 @@ body {
   padding-inline: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #eee;
-  color: #333;
   cursor: pointer;
-}
-
-.dropdown {
-  margin-top: 50px;
-}
-
-.dropdown > select {
-  padding: 5px;
-  text-align: center;
 }
 
 .window {
@@ -72,6 +61,9 @@ body {
 .counter-buttons > button {
   margin-inline: 10px;
   padding: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .notes {
