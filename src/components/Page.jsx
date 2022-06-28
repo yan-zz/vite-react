@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DropDown } from './DropDown';
+import { AppSwitcher } from './AppSwitcher';
 import { Window } from './Window';
 
 export const Page = () => {
@@ -7,7 +7,7 @@ export const Page = () => {
 
   return (
     <div className="page">
-      <DropDown setComponent={setComponent} />
+      <AppSwitcher setComponent={setComponent} />
       <Window component={component} />
     </div>
   );
