@@ -9,16 +9,15 @@ export const Window = ({ component }) => {
 
   useEffect(() => {
     {
-      component === 'hello' && setWindow(<Hello />);
-    }
-    {
-      component === 'counter' && setWindow(<Counter />);
-    }
-    {
-      component === 'notes' && setWindow(<Notes />);
-    }
-    {
-      component === 'calculator' && setWindow(<Calculator />);
+      component === 'hello'
+        ? setWindow(<Hello />)
+        : component === 'counter'
+        ? setWindow(<Counter />)
+        : component === 'notes'
+        ? setWindow(<Notes />)
+        : component === 'calculator'
+        ? setWindow(<Calculator />)
+        : setWindow(<h1 children="Press F5" />);
     }
   }, [component]);
 
