@@ -122,11 +122,10 @@ body {
 
 .numbers > button {
   padding: 13px;
-  padding-inline: 26px;
   margin: 5px;
   border-radius: 5px;
   font-size: calc(10px + 2vmin);
-  border: 1px solid rgba(247, 29, 119, 0.836);
+  border: 1px solid #f7253a;
   cursor: pointer;
 }
 
