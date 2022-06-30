@@ -9,6 +9,7 @@ export const Page = () => {
     <div className="page">
       <AppSwitcher setComponent={setComponent} />
       <Window component={component} />
+      <AppSwitcher setComponent={setComponent} />
     </div>
   );
 };
